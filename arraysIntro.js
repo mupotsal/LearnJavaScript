@@ -45,9 +45,35 @@ console.log(objArray)
 // Array Manipulation
 // can use push and pop (easy way to make an array work like a Stack)
 //
-var stack_arr = new Array(1,2,3,4)
+var stack_arr = new Array(1,2,3,4,5,6,7,8,9,10)
 stack_arr.pop()
 console.log(stack_arr)
 stack_arr.push(90) // adding new items to a list
 console.log(stack_arr)
+
+
+//Queues using shift and unsfhit
+// note that all these methods work on the stack
+
+stack_arr.unshift(10);
+console.log(stack_arr) // unshift is like push
+console.log(stack_arr.shift());
+
+/*Splicing
+Splicing arrays in JavaScript removes a certain part from an array to create a new array, 
+made up from the part we took out. For example, if we wanted to remove the five numbers
+from the following array beginning from the 3rd index, we would do the following:
+
+var myArray = [0,1,2,3,4,5,6,7,8,9];
+var splice = myArray.splice(3,5);
+
+console.log(splice);        // will print out 3,4,5,6,7
+console.log(myArray);       // will print out 0,1,2,8,9
+After splicing the array, it will only contain the part before and after the splicing. 
+The splice is equal to all the variables between 3 and 7 (inclusive), and the remainder of the array,
+ which contains all variables between 0 and 2 (inclusive), and 8 to 9 (inclusive).
+*/
+
+var stack_slice = stack_arr.splice(2,3);
+console.log(stack_slice);
 
