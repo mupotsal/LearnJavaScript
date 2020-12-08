@@ -77,3 +77,15 @@ The splice is equal to all the variables between 3 and 7 (inclusive), and the re
 var stack_slice = stack_arr.splice(2,3);
 console.log(stack_slice);
 
+//methods to search through Arrays in JavaScript
+let myNumbers = [1,2,3,4,5,6,7,8,9,10];
+// Array.includes -> this returns true or false
+console.log(myNumbers.includes(5));
+// the syntax is like arr.includes(valueToFind,[fromIndex])
+
+console.log(myNumbers.includes(2,2));
+// can also use indexOf() -> this one returns the index of the element, else it returns -1 showing that the element was not found
+console.log(myNumbers.indexOf(1)); // this should give a 0
+console.log(myNumbers.indexOf(91)); // this should  give a -1
+
+
