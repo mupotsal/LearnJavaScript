@@ -39,3 +39,9 @@ for (let i=0;i<10;i=i+1){
     }
     console.log(sec);
 }
+
+// it is advisable to use let instead of var in JavaScript
+
+/*
+I can do a for loop, while loop, strings, arrays, and the basic syntax in JavaScript
+ */
